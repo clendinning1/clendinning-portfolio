@@ -1,2 +1,2 @@
 # clendinning-portfolio
-My portfolio :3
+my portfolio :3
