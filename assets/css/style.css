@@ -1,0 +1,180 @@
+/* 
+TO DO:
+1. build the cards visually first, then worry about the media queries.
+2. make sure to use flexboxes so the responsiveness (mobile variant) is kosher.
+3. media queries for responsiveness.
+4. use variables in css. 
+5. media query it up for fun styling. (hidden bits)
+6. Add keyboard focus????? other accessibility stuff??????
+*/
+
+
+
+/* 1|| gen: */
+
+* { 
+    /* REMEMBER: this changes the default for EVERYTHING */
+    box-sizing: border-box;
+}
+
+:root {
+    /* use variables for something surely */
+    /* declared here. call by using var(--varlol) instead of value */
+    --varlol: 100px;
+}
+
+body {
+    /* change bg color to #0c0c0c when done testing */
+    background-color: #1f0000;
+    color: white;
+    margin: 60px;
+}
+
+span {
+    color: aquamarine;
+}
+
+
+
+/* 2|| all content (cards 1-4): */
+
+content {
+    /* the box holding all cards */
+    display: flex;
+    flex-flow: column wrap;
+    /* is the bottom line necessito? */
+    /* flex: 1 0 200px; */
+    align-content: center;
+    text-align: center;
+    font-family: Manrope, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+section {
+    /* formatting for each individual card */
+    margin: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border: solid;
+    border-width: 3px;
+    /* media query padding for smaller puter window: ~ 50px, 150px, 150px*/
+    padding: 40px;
+    padding-left: 400px;
+    padding-right: 400px;
+    background-color: black;
+}
+
+h1,
+h2 {
+    /* All header text */
+    font-family: Inter, 'Lucida Sans', sans-serif;
+    letter-spacing: 2px;
+}
+
+button {
+    /* All three buttons */
+    display: inline-block;
+    margin-top: 50px;
+    border: solid;
+    border-width: 1px;
+    padding: 15px;
+    width: 120px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    background-color: black;
+    color: white;
+}
+
+
+
+/* 3|| card 1: */
+
+#intro {
+    margin-top: 350px;
+    margin-bottom: 350px;
+    padding: 150px;
+}
+
+h1 {
+    font-size: 100px;
+}
+
+.expbutt {
+    /* expand button */
+    /* On click: link to #about, disappear #intro */
+    font-size: 20px;
+}
+
+
+
+/* 4|| cards 2-4: */
+
+#about,
+#work,
+#contact {
+    /* Everything on c2-4 */
+    padding-bottom: 70px;
+}
+
+section h2 {
+    /* Headers on cards 2-4 */
+    margin-bottom: 40px;
+    border: solid;
+    border-width: 2px;
+}
+
+
+
+/* 5|| card 2 (about): */
+
+div {
+    /* pair of buttons on #about card - both */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* .wbutt, .cbutt {
+    /* pair of buttons on #about card - individual */
+    /* On hover: highlight. on click: disappear all other cards. */
+/* } *
+
+/* .wbutt {
+    /* work button */
+    /* on click: link to #work */
+/* } */
+
+/* .cbutt {
+    /* contact button */
+    /* on click: link to #contact */
+/* } */
+
+
+
+/* 6|| card 3 (work): */
+
+/* #work {
+    
+} */
+
+
+
+/* 7|| card 4 (contact): */
+
+/* #contact {
+
+} */
+
+
+
+/* 8|| footer: */
+
+#copyright {
+    margin-left: 250px;
+    margin-right: 250px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    text-align: left;
+    font-size: 20px;
+}

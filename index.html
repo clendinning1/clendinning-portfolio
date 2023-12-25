@@ -4,11 +4,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!--Remember to load reset.css before style.css-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Manrope:wght@200&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>clendinning.</title>
 </head>
 
 <body>
+    <!--Content (cards 1-4).-->
+    <content>
+        <!--Intro ID (first card). everything else is hidden until clicking "expand".-->
+        <section id="intro">
+            <h1>clendinning.</h1>
+            <button class="expbutt">
+                <a href="#about">expand</a>
+            </button>
+        </section>
 
+        <!--About ID (second card). contains a short "about me" with two buttons for "work" and "contact".-->
+        <section id="about">
+            <h2>about</h2>
+            <!--dolly pic :3-->
+            <p>prgrmr, artist, professional sillyguy ;)</p>
+            <div>
+                <button class="wbutt">
+                    <a href="#work">work</a>
+                </button>
+                <button class="cbutt">
+                    <a href="#contact">contact</a>
+                </button>
+            </div>
+        </section>
+
+        <!--Work ID (third card). this is the portfolio proper with previews of other projects.-->
+        <section id="work">
+            <h2>work</h2>
+            <p>here will be many images</p>
+        </section>
+
+        <!--Contact ID (fourth card). this is my contact info. when the button is clicked, it should appear underneath the "about"(??)-->
+        <section id="contact">
+            <h2>contact</h2>
+            <!--email icon-->
+            <p>azureocean@protonmail.com</p>
+            <!--github icon-->
+            <p>clendinning1</p>
+        </section>
+
+        <!--Footer. copyright.-->
+        <footer>
+            <section id="copyright">
+                &copy; clendinning 2024.
+                </p>
+        </footer>
+    </content>
 </body>
 
 </html>
