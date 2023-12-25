@@ -10,9 +10,21 @@ title, script {
     display: none;
 }
 
-a {
+a, p {
     color: white;
     text-decoration-line: none;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+p {
+    display: block;
+}
+
+a {
+    display: inline;
 }
 
 

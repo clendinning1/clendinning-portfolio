@@ -31,7 +31,12 @@ body {
 }
 
 span {
+    display: inline;
     color: aquamarine;
+}
+
+div {
+    display: flex;
 }
 
 
@@ -42,8 +47,6 @@ content {
     /* the box holding all cards */
     display: flex;
     flex-flow: column wrap;
-    /* is the bottom line necessito? */
-    /* flex: 1 0 200px; */
     align-content: center;
     text-align: center;
     font-family: Manrope, Helvetica, sans-serif;
@@ -52,15 +55,14 @@ content {
 
 section {
     /* formatting for each individual card */
-    margin: 50px;
-    margin-left: 0px;
-    margin-right: 0px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    /* values go clockwise: top, right, bottom, left */
+    margin: 50px 0px 50px 0px;
     border: solid;
     border-width: 3px;
-    /* media query padding for smaller puter window: ~ 50px, 150px, 150px*/
-    padding: 40px;
-    padding-left: 400px;
-    padding-right: 400px;
+    padding: 40px 400px 40px 400px;
     background-color: black;
 }
 
@@ -122,16 +124,17 @@ section h2 {
     margin-bottom: 40px;
     border: solid;
     border-width: 2px;
+    padding: 10px 30px 10px 30px;
 }
 
 
 
 /* 5|| card 2 (about): */
 
-div {
+.buttonz {
     /* pair of buttons on #about card - both */
-    display: flex;
-    justify-content: space-evenly;
+    gap: 20px;
+    justify-content: space-between;
 }
 
 /* .wbutt, .cbutt {
