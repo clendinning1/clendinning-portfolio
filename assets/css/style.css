@@ -2,10 +2,12 @@
 TO DO:
 1. build the cards visually first, then worry about the media queries.
 2. make sure to use flexboxes so the responsiveness (mobile variant) is kosher.
-3. use variables in css. 
-4. media query it up.
-5. Add keyboard focus????? other accessibility stuff??????
+3. media queries for responsiveness.
+4. use variables in css. 
+5. media query it up for fun styling. (hidden bits)
+6. Add keyboard focus????? other accessibility stuff??????
 */
+
 
 
 /* 1|| gen: */
@@ -23,16 +25,19 @@ body {
 
 
 
-/* 2|| content (cards 1-4): */
+/* 2|| all content (cards 1-4): */
 
 content {
+    /* the box holding all cards */
     display: flex;
-    flex-direction: column;
-    flex: 1 0 200px;
+    flex-flow: column wrap;
+    /* is the bottom line necessito? */
+    /* flex: 1 0 200px; */
+    align-content: center;
 }
 
 section {
-    /* should apply to each card */
+    /* formatting for each individual card */
     text-align: center;
     border-style: solid;
     border-width: 3px;
@@ -41,20 +46,18 @@ section {
     background-color: black;
 }
 
-/* name */
-h1 {
-    font-size: 80px;
-}
-
-h2 {
+/* card 2-4 labels */
+section h2 {
     border-style: solid;
     border-width: 1px;
     border-color: white;
 }
 
-/* card 1 | "intro": */
-#intro {
-    color: white; /*pc: dt */
+
+
+/* 3|| card 1: */
+section h1 {
+    font-size: 80px;
 }
 
 /* expand button */
@@ -63,26 +66,29 @@ h2 {
 }
 
 
-/* card 2 | "about":*/
+
+/* 4|| card 2: */
 #about {
     color: white; /*pc: dt */
 }
 
 
-/* card 3 | "work":*/
+
+/* 5|| card 3: */
 #work {
     color: white; /*pc: dt */
 }
 
 
-/* card 4 "contact": */
+
+/* 6|| card 4: */
 #contact {
     color: white; /*pc: dt */
 }
 
 
 
-/* 3|| footer (copyright): */
+/* 7|| footer: */
 
 footer {
     color: white;
