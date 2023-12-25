@@ -17,28 +17,35 @@
 
     <!--Header (intro card). everything else is hidden until clicking "expand".-->
     <header>
-        <h1>clendinning.</h1>
-        <header class="exp">expand</header>
+        <section id="intro">
+            <h1>clendinning.</h1>
+            <header class="exp">expand</header>
+        </section>
     </header>
-
-    <!--Should all three cards be under one element, or to each their own? maybe to each their own, since "body" covers everything that overlaps????????????
-        No, I think each card should be an id under each element, since they have to be linked to.
-    -->
 
     <!--Content (cards 1-3).-->
     <content>
         <!--About ID (first card). contains a short "about me" with two buttons for "work" and "contact".-->
+        <section id="about">
+            <h2>about</h2>
+        </section>
 
         <!--Work ID (second card). this is the portfolio proper with previews of other projects.-->
+        <section id="work">
+            <h2>work</h2>
+        </section>
 
         <!--Contact ID (third card). this is my contact info. when the button is clicked, it should appear underneath the "about"(??)-->
+        <section id="contact">
+            <h2>contact</h2>
+        </section>
     </content>
 
     <!--Footer (not a card): copyright.-->
     <footer>
-        <p>
+        <section id="copyright">
             &copy; clendinning 2024
-        </p>
+        </section>
     </footer>
 </body>
 
