@@ -4,11 +4,12 @@ TO DO:
 2. make sure to use flexboxes so the responsiveness (mobile variant) is kosher.
 3. use variables in css. 
 4. media query it up.
-5. Add keyboard focus?????
+5. Add keyboard focus????? other accessibility stuff??????
 */
 
 
 /* 1|| gen: */
+
 * {
     box-sizing: border-box;
     margin: 100px;
@@ -22,17 +23,24 @@ body {
 
 section {
     /* should apply to each card */
-    display: flex;
-    /* flex: 1 0 200px; */
-    flex-direction: column;
     text-align: center;
     border-style: solid;
     border-width: 1px;
     border-color: white;
+    padding: 50px;
     background-color: black;
 }
 
-/* intro card ("intro" section id): */
+
+
+/* 2|| content (cards 1-4): */
+
+content {
+    color: white;
+    /*pc: dt */
+}
+
+/* card 1 | "intro": */
 #intro {
     color: white; /*pc: dt */
 }
@@ -48,34 +56,33 @@ h1 {
 }
 
 
-
-/* 3|| content (cards 1-3): */
-content {
-    color: white; /*pc: dt */
-}
-
-/* card one ("about" section id): */
+/* card 2 | "about":*/
 #about {
     color: white; /*pc: dt */
 }
 
-/* card two ("work" section id): */
+
+/* card 3 | "work":*/
 #work {
     color: white; /*pc: dt */
 }
 
-/* card three ("contact" section id): */
+
+/* card 4 "contact": */
 #contact {
     color: white; /*pc: dt */
 }
 
 
 
-/* 4|| footer (copyright): */
+/* 3|| footer (copyright): */
+
 footer {
-    text-align: center;
+    color: white;
+        /* pc: dt */
 }
 
 #copyright {
-    text-align: center;
+    color: white;
+        /* pc: dt */
 }
