@@ -17,13 +17,22 @@ TO DO:
     box-sizing: border-box;
 }
 
-body {
-    /* change bg color to #0c0c0c when done testing */
-    background-color: #2d4046;
-    color: white;
-    margin: 100px;
+:root {
+    /* use variables for something surely */
+    /* declared here. call by using var(--varlol) instead of value */
+    --varlol: 100px;
 }
 
+body {
+    /* change bg color to #0c0c0c when done testing */
+    background-color: #1f0000;
+    color: white;
+    margin: 60px;
+}
+
+span {
+    color: aquamarine;
+}
 
 
 /* 2|| all content (cards 1-4): */
@@ -35,21 +44,34 @@ content {
     /* is the bottom line necessito? */
     /* flex: 1 0 200px; */
     align-content: center;
+    text-align: center;
+    font-family: Manrope, Helvetica, sans-serif;
 }
 
 section {
     /* formatting for each individual card */
-    margin-left: 10%;
-    margin-right: 10%;
+    margin: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
     border-style: solid;
     border-width: 3px;
     border-color: white;
-    padding: 50px;
-    background-color: black
+    /* media query padding for smaller puter window: ~ 50px, 150px, 150px*/
+    padding: 40px;
+    padding-left: 400px;
+    padding-right: 400px;
+    background-color: black;
 }
 
-/* card 2-4 labels */
+h1,
+h2 {
+    /* All headers */
+    font-family: Inter, 'Lucida Sans', sans-serif;
+    letter-spacing: 2px;
+}
+
 section h2 {
+    /* Headers on cards 2-4 */
     border-style: solid;
     border-width: 1px;
     border-color: white;
@@ -58,13 +80,20 @@ section h2 {
 
 
 /* 3|| card 1: */
-section h1 {
-    font-size: 80px;
+#intro {
+    margin-top: 350px;
+    margin-bottom: 350px;
+    padding: 150px;
 }
 
-/* expand button */
+section h1 {
+    font-size: 100px;
+}
+
 .exp {
-    color: white; /*pc: dt */
+    /* expand button */
+    /* On click: link to #about, disappear #intro */
+    color: white;
 }
 
 
@@ -92,12 +121,11 @@ section h1 {
 
 /* 7|| footer: */
 
-footer {
-    color: white;
-        /* pc: dt */
-}
-
 #copyright {
-    color: white;
-        /* pc: dt */
+    margin-left: 250px;
+    margin-right: 250px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    text-align: left;
 }

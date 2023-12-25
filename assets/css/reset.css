@@ -1,6 +1,6 @@
 /* Make sure there's no "user agent stylesheet" defaults in chrome devtool */
 
-*, body, header {
+*, body, header, content {
     margin: 0;
     padding: 0;
     display: block
