@@ -1,4 +1,11 @@
-*, body, header, {
+/* Make sure there's no "user agent stylesheet" defaults in chrome devtool */
+
+*, body, header {
     margin: 0;
     padding: 0;
+    display: block
+}
+
+title, script {
+    display: none;
 }

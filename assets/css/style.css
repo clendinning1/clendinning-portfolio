@@ -12,15 +12,16 @@ TO DO:
 
 /* 1|| gen: */
 
-* {
+* { 
+    /* REMEMBER: this changes the default for EVERYTHING */
     box-sizing: border-box;
-    margin: 100px;
 }
 
 body {
     /* change bg color to #0c0c0c when done testing */
     background-color: #2d4046;
     color: white;
+    margin: 100px;
 }
 
 
@@ -38,12 +39,13 @@ content {
 
 section {
     /* formatting for each individual card */
-    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
     border-style: solid;
     border-width: 3px;
     border-color: white;
     padding: 50px;
-    background-color: black;
+    background-color: black
 }
 
 /* card 2-4 labels */
