@@ -35,6 +35,7 @@ span {
 }
 
 
+
 /* 2|| all content (cards 1-4): */
 
 content {
@@ -46,6 +47,7 @@ content {
     align-content: center;
     text-align: center;
     font-family: Manrope, Helvetica, sans-serif;
+    font-size: 25px;
 }
 
 section {
@@ -53,9 +55,8 @@ section {
     margin: 50px;
     margin-left: 0px;
     margin-right: 0px;
-    border-style: solid;
+    border: solid;
     border-width: 3px;
-    border-color: white;
     /* media query padding for smaller puter window: ~ 50px, 150px, 150px*/
     padding: 40px;
     padding-left: 400px;
@@ -65,61 +66,108 @@ section {
 
 h1,
 h2 {
-    /* All headers */
+    /* All header text */
     font-family: Inter, 'Lucida Sans', sans-serif;
     letter-spacing: 2px;
 }
 
-section h2 {
-    /* Headers on cards 2-4 */
-    border-style: solid;
+button {
+    /* All three buttons */
+    display: inline-block;
+    margin-top: 50px;
+    border: solid;
     border-width: 1px;
-    border-color: white;
+    padding: 15px;
+    width: 120px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    background-color: black;
+    color: white;
 }
 
 
 
 /* 3|| card 1: */
+
 #intro {
     margin-top: 350px;
     margin-bottom: 350px;
     padding: 150px;
 }
 
-section h1 {
+h1 {
     font-size: 100px;
 }
 
-.exp {
+.expbutt {
     /* expand button */
     /* On click: link to #about, disappear #intro */
-    color: white;
+    font-size: 20px;
 }
 
 
 
-/* 4|| card 2: */
-#about {
-    color: white; /*pc: dt */
-}
+/* 4|| cards 2-4: */
 
-
-
-/* 5|| card 3: */
-#work {
-    color: white; /*pc: dt */
-}
-
-
-
-/* 6|| card 4: */
+#about,
+#work,
 #contact {
-    color: white; /*pc: dt */
+    /* Everything on c2-4 */
+    padding-bottom: 70px;
+}
+
+section h2 {
+    /* Headers on cards 2-4 */
+    margin-bottom: 40px;
+    border: solid;
+    border-width: 2px;
 }
 
 
 
-/* 7|| footer: */
+/* 5|| card 2 (about): */
+
+div {
+    /* pair of buttons on #about card - both */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* .wbutt, .cbutt {
+    /* pair of buttons on #about card - individual */
+    /* On hover: highlight. on click: disappear all other cards. */
+/* } *
+
+/* .wbutt {
+    /* work button */
+    /* on click: link to #work */
+/* } */
+
+/* .cbutt {
+    /* contact button */
+    /* on click: link to #contact */
+/* } */
+
+
+
+/* 6|| card 3 (work): */
+
+/* #work {
+    
+} */
+
+
+
+/* 7|| card 4 (contact): */
+
+/* #contact {
+
+} */
+
+
+
+/* 8|| footer: */
 
 #copyright {
     margin-left: 250px;
@@ -128,4 +176,5 @@ section h1 {
     padding-bottom: 30px;
     padding-left: 40px;
     text-align: left;
+    font-size: 20px;
 }
