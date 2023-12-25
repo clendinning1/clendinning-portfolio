@@ -1,0 +1,31 @@
+/* 
+TO DO:
+1. build the cards visually first, then worry about the media queries.
+2. make sure to use flexboxes so the responsiveness (mobile variant) is kosher.
+3. use variables in css. 
+4. media query it up.
+*/
+
+/* gen: */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #222222;
+    color: white;
+}
+
+/* header (intro card): */
+
+/* main (cards 1-3): */
+
+/* (card one): */
+
+/* (card two): */
+
+/* (card three): */
+
+/* footer (copyright): */
