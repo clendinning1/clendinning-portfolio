@@ -5,6 +5,7 @@ my portfolio :3
 used
 - google fonts inter y manrope
 - normalize.css button settings (include license???????????)
+- font awesome
 
 learnt avec
 - MDN https://developer.mozilla.org/en-US/

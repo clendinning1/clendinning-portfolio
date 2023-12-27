@@ -7,6 +7,7 @@
     <!--Remember to load reset.css before style.css-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/3dfe415d65.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Manrope:wght@200&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/reset.css">
@@ -28,8 +29,10 @@
         <!--About ID (second card). contains a short "about me" with two buttons for "work" and "contact".-->
         <section id="about">
             <h2>about</h2>
-            <img></img>
-            <p>prgrmr, artist, professional <span>sillyguy</span> ;)</p>
+            <div class="profile">
+                <img src=".\assets\images\catpic.jpg" alt="Alt Text: photo of my cat!"></img>
+                <p>prgrmr, artist, professional <span>sillyguy</span> ;)</p>
+            </div>
             <div class="buttonz">
                 <button class="wbutt">
                     <a href="#work">work</a>
@@ -49,10 +52,13 @@
         <!--Contact ID (fourth card). this is my contact info. when the button is clicked, it should appear underneath the "about"(??)-->
         <section id="contact">
             <h2>contact</h2>
-            <!--email icon-->
-            <p>azureocean@protonmail.com</p>
-            <!--github icon-->
-            <p>clendinning1</p>
+            <div class="email">
+                <i class="fa-solid fa-envelope" title="Email"></i><p>azureocean@protonmail.com</p>
+            </div>
+            <div class="github">
+                <i class="fa-brands fa-github" title="GitHub"></i>
+                <p>clendinning1</p>
+            </div>
         </section>
 
         <!--Footer. copyright.-->

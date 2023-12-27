@@ -6,7 +6,7 @@
     display: block;
 }
 
-title, script {
+title, script, #fa-main, #fa-v4-shims, #fa-v4-font-face, #fa-v5-font-face {
     display: none;
 }
 
