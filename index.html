@@ -21,9 +21,7 @@
         <!--Intro ID (first card). everything else is hidden until clicking "expand".-->
         <section id="intro">
             <h1>clendinning.</h1>
-            <button class="expbutt">
-                <a href="#about">expand</a>
-            </button>
+            <a class=expbutt href="#about">— expand —</a>
         </section>
 
         <!--About ID (second card). contains a short "about me" with two buttons for "work" and "contact".-->
@@ -31,14 +29,17 @@
             <h2>about</h2>
             <div class="profile">
                 <img src=".\assets\images\catpic.jpg" alt="Alt Text: photo of my cat!"></img>
-                <p>prgrmr, artist, professional <span>sillyguy</span> ;)</p>
+                <p>programmer, artist, <span>third noun</span>.<br>knows ENG<sub>[C3]</sub>, FR<sub>[A2]</sub>, HTML, CSS, and Javascript.</p>
             </div>
+            <p>
+                <hr>
+            </p>
             <div class="buttonz">
-                <button class="wbutt">
-                    <a href="#work">work</a>
+                <button class="wbutt" onclick="location.href='#work'">
+                    work
                 </button>
-                <button class="cbutt">
-                    <a href="#contact">contact</a>
+                <button class="cbutt" onclick="location.href='#contact'">
+                    contact
                 </button>
             </div>
         </section>
@@ -52,12 +53,14 @@
         <!--Contact ID (fourth card). this is my contact info. when the button is clicked, it should appear underneath the "about"(??)-->
         <section id="contact">
             <h2>contact</h2>
-            <div class="email">
-                <i class="fa-solid fa-envelope" title="Email"></i><p>azureocean@protonmail.com</p>
-            </div>
-            <div class="github">
-                <i class="fa-brands fa-github" title="GitHub"></i>
-                <a class="gha" href="https://github.com/clendinning1/">clendinning1</a>
+            <div class="eg">
+                <div class="email">
+                    <i class="fa-solid fa-envelope" title="Email"></i><p>azureocean@protonmail.com</p>
+                </div>
+                <div class="github">
+                    <i class="fa-brands fa-github" title="GitHub"></i>
+                    <a class="gha" href="https://github.com/clendinning1/">clendinning1</a>
+                </div>
             </div>
         </section>
 

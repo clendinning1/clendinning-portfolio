@@ -11,3 +11,4 @@ learnt avec
 - MDN https://developer.mozilla.org/en-US/
 - w3 https://www.w3schools.com/
 - https://flexboxfroggy.com/ :)
+- https://stackoverflow.com/questions/2906582/how-do-i-create-an-html-button-that-acts-like-a-link

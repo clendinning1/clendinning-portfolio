@@ -20,19 +20,28 @@ TO DO:
 :root {
     /* use variables for something surely */
     /* declared here. call by using var(--varlol) instead of value */
-    --varlol: 100px;
+    --gray: #e2e2e2; /* subtle gray */
+    --dgray: #bebebe; /* darker gray */
+    --blue: #b9ffff; /* light blue */
 }
 
 body {
-    /* change bg color to #0c0c0c when done testing */
-    background-color: #1f0000;
+    background-color: #070707;
+    background-image: linear-gradient(black, #768989);
     color: white;
     margin: 60px;
 }
 
 span {
     display: inline;
-    color: aquamarine;
+    color: var(--blue);
+}
+
+sub {
+    margin-left: 3px;
+    margin-right: 1px;
+    font-size: 20px;
+    color: var(--gray);
 }
 
 div {
@@ -75,18 +84,19 @@ h2 {
 }
 
 button {
-    /* All three buttons */
+    /* All buttons */
     display: inline-block;
-    margin-top: 50px;
+    margin-top: 0px;
     border: solid;
     border-width: 1px;
     padding: 15px;
     width: 120px;
     text-align: center;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 23px;
     background-color: black;
-    color: white;
+    border-color: white;
+    color: var(--gray);
 }
 
 
@@ -104,9 +114,9 @@ h1 {
 }
 
 .expbutt {
-    /* expand button */
-    /* On click: link to #about, disappear #intro */
+    border-color: black;
     font-size: 20px;
+    word-spacing: 10px;
 }
 
 
@@ -135,7 +145,7 @@ section h2 {
 #about {
     align-content: center;
     max-width: 900px;
-    padding: 100px 200px 100px 200px;
+    padding: 100px 200px 50px 200px;
 }
 
 .profile {
@@ -150,26 +160,18 @@ section img {
     height: 100px;
 }
 
+hr {
+    margin-top: 50px;
+    border-width: 1px;
+    border-color: var(--dgray);
+    width: 100%;
+}
+
 .buttonz {
     /* pair of buttons on #about card - both */
     gap: 20px;
     justify-content: space-between;
 }
-
-/* .wbutt, .cbutt {
-    /* pair of buttons on #about card - individual */
-    /* On hover: highlight. on click: disappear all other cards. */
-/* } *
-
-/* .wbutt {
-    /* work button */
-    /* on click: link to #work */
-/* } */
-
-/* .cbutt {
-    /* contact button */
-    /* on click: link to #contact */
-/* } */
 
 
 
@@ -183,6 +185,12 @@ section img {
 
 /* 7|| card 4 (contact): */
 
+.eg {
+    /* box holding the email and gh flexboxes */
+    display: flex;
+    flex-flow: column wrap;
+}
+
 .email, .github {
     /* email and github line flexboxes */
     display: flex;
@@ -192,6 +200,7 @@ section img {
 
 i {
     margin-right: 20px;
+    color: var(--dgray);
 }
 
 /* 8|| footer: */
@@ -206,9 +215,32 @@ i {
     font-size: 20px;
 }
 
+
+
+
 /* 9|| media queries: */
+
 @media (hover: hover) {
-    a:hover {
+    /* expand/about link hover effect */
+    .expbutt:hover {
+        color: black;
+        transition: color 0.3s;
+    }
+}
+
+@media (hover: hover) {
+    /* button pair hover effect */
+    button:hover {
+        cursor: pointer;
+        border-color: black;
+        color: black;
+        transition: 0.3s;
+    }
+}
+
+@media (hover: hover) {
+    /* github link hover effect */
+    .gha:hover {
         color: black;
         transition: color 0.3s;
     }
