@@ -86,7 +86,7 @@ section {
     /* margin, border, and padding */
     margin: 50px 0px 50px 0px;
     border: solid;
-    border-width: 3px;
+    border-width: 2px;
     padding: 50px;
 
     /* style */
@@ -111,7 +111,7 @@ h2 {
     /* settings for headers/labels on #work and #contact cards */
     margin-bottom: 40px;
     border: solid;
-    border-width: 2px;
+    border-width: 1px;
     padding: 10px 30px 10px 30px;
 }
 
@@ -184,7 +184,7 @@ button {
 
 
     /* animation */
-    
+
     /* default */
     transition: color 0.2s linear;
     /* opera */
@@ -199,6 +199,8 @@ button {
 
 button:hover {
     /* triggers button animation */
+    /* use line below if different border and text colors */
+    /* border-color: var(--dgray); */
     color: var(--dgray);
     cursor: pointer;
 }
@@ -206,9 +208,39 @@ button:hover {
 
 /* 5|| work/portfolio card: */
 
-/* {
-    
-} */
+.portfolio {
+    /* div containing the portfolio images */
+    flex-flow: row wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+}
+
+.item1 img,
+.item2 img,
+.item3 img,
+.item4 img {
+    /* items 1-4 */
+    margin: 10px;
+}
+
+.item1 img,
+.item2 img,
+.item3 img,
+.item4 img {
+    /* item images 1-4 */
+    border: solid var(--lgray);
+    border-width: 3px;
+}
+
+.item2 img,
+.item3 img,
+.item4 img {
+    /* item images 2-4 */
+    max-width: 800px;
+    max-height: 800px;
+}
 
 
 
@@ -260,4 +292,12 @@ a {
 
 
 
-/* 9|| media queries: */
+/* 9|| sillymode: */
+
+/* .sillay {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+} */
