@@ -43,10 +43,15 @@ TO DO:
 }
 
 body {
-    margin: 60px;
+
+    /* make scrollbar look better */
+    /* background-image: url(.\assets\images\color.jpg), linear-gradient(var(--dgray), var(--bglgray));
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, no-repeat; */
+
     background-color: var(--bg);
     background-image: linear-gradient(var(--dgray), var(--bglgray));
-    /* 918 px of one color, then gradient below homepage */
+
     color: var(--lgray);
 }
 
@@ -152,9 +157,8 @@ main p {
 
 /* 4|| navigation card */
 
-/* positioning */
-
 .navi {
+    /* positioning */
     /* for internet explorer */
     position: static;
     /* for safari */
@@ -162,7 +166,12 @@ main p {
     /* for coolguys */
     position: sticky;
     top: 0;
+
+    /* margin, border, padding */
+    margin-top: 0px;
+    border: none;
     padding: 10px 300px 10px 300px;
+    width: 100%;
 }
 
 /* buttons */
