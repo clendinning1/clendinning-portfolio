@@ -16,41 +16,37 @@
 </head>
 
 <body>
-    <!--Content (cards 1-4).-->
     <content>
-        <!--Intro ID (first card). everything else is hidden until clicking "expand".-->
+        <!--Intro-->
         <section id="intro">
-            <h1>clendinning.</h1>
-            <a class=expbutt href="#about">— expand —</a>
+            <!--'section' gives card formatting-->
+            <h1>clendinning</h1>
+            <div class="about">
+                <!--'about' div holds intro text and cat pic-->
+                <img src=".\assets\images\catpic.jpg" alt="Alt Text: photo of my cat!"></img>
+                <p>HTML, CSS, Javascript.</p>
+            </div>
         </section>
 
-        <!--About ID (second card). contains a short "about me" with two buttons for "work" and "contact".-->
-        <section id="about">
-            <h2>about</h2>
-            <div class="profile">
-                <img src=".\assets\images\catpic.jpg" alt="Alt Text: photo of my cat!"></img>
-                <p>programmer, artist, <span>third noun</span>.<br>knows ENG<sub>[C3]</sub>, FR<sub>[A2]</sub>, HTML, CSS, and Javascript.</p>
-            </div>
-            <p>
-                <hr>
-            </p>
-            <div class="buttonz">
-                <button class="wbutt" onclick="location.href='#work'">
+        <!--Navigation-->
+        <section id="navi">
+            <nav>
+                <button class="wbutt" title="Portfolio" onclick="location.href='#work'">
                     work
                 </button>
-                <button class="cbutt" onclick="location.href='#contact'">
+                <button class="cbutt" title="Contact" onclick="location.href='#contact'">
                     contact
                 </button>
-            </div>
+            </nav>
         </section>
 
-        <!--Work ID (third card). this is the portfolio proper with previews of other projects.-->
+        <!--Work (portfolio)-->
         <section id="work">
             <h2>work</h2>
             <p>here will be many images</p>
         </section>
 
-        <!--Contact ID (fourth card). this is my contact info. when the button is clicked, it should appear underneath the "about"(??)-->
+        <!--Contact-->
         <section id="contact">
             <h2>contact</h2>
             <div class="eg">

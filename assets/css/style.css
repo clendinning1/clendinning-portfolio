@@ -18,16 +18,19 @@ TO DO:
 }
 
 :root {
-    /* use variables for something surely */
-    /* declared here. call by using var(--varlol) instead of value */
-    --gray: #e2e2e2; /* subtle gray */
-    --dgray: #bebebe; /* darker gray */
+    /* variables */
+    --white: #fff;
+    --offwhite: #ebebeb;
+    --lgray: #c9c9c9; /* subtle gray */
+    --gray: #bebebe; /* darker subtle gray */
+    --dgray: #070707; /* very dark gray */
+    --black: #000;
     --blue: #b9ffff; /* light blue */
 }
 
 body {
-    background-color: #070707;
-    background-image: linear-gradient(black, #768989);
+    background-color: var(--dgray);
+    background-image: linear-gradient(var(--black), #768989); /* 918 px of one color, then gradient below homepage */
     color: white;
     margin: 60px;
 }
@@ -37,20 +40,9 @@ span {
     color: var(--blue);
 }
 
-sub {
-    margin-left: 3px;
-    margin-right: 1px;
-    font-size: 20px;
-    color: var(--gray);
-}
-
-div {
-    display: flex;
-}
 
 
-
-/* 2|| all content (cards 1-4): */
+/* 2|| all content: */
 
 content {
     /* the box holding all cards */
@@ -64,74 +56,34 @@ content {
 }
 
 section {
-    /* formatting for each individual card */
+    /* settings for each individual card */
     display: flex;
     flex-flow: column wrap;
+    align-content: center;
     align-items: center;
     /* values go clockwise: top, right, bottom, left */
     margin: 50px 0px 50px 0px;
     border: solid;
     border-width: 3px;
     padding: 40px 400px 40px 400px;
-    background-color: black;
+    border-color: var(--lgray);
+    background-color: var(--dgray);
+}
+
+div {
+    /* settings for stuff inside sections */
+    display: flex;
 }
 
 h1,
 h2 {
-    /* All header text */
+    /* all header text */
     font-family: Inter, 'Lucida Sans', sans-serif;
     letter-spacing: 2px;
 }
 
-button {
-    /* All buttons */
-    display: inline-block;
-    margin-top: 0px;
-    border: solid;
-    border-width: 1px;
-    padding: 15px;
-    width: 120px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 23px;
-    background-color: black;
-    border-color: white;
-    color: var(--gray);
-}
-
-
-
-/* 3|| card 1: */
-
-#intro {
-    margin-top: 350px;
-    margin-bottom: 350px;
-    padding: 150px;
-}
-
-h1 {
-    font-size: 100px;
-}
-
-.expbutt {
-    border-color: black;
-    font-size: 20px;
-    word-spacing: 10px;
-}
-
-
-
-/* 4|| cards 2-4: */
-
-#about,
-#work,
-#contact {
-    /* Everything on c2-4 */
-    padding-bottom: 70px;
-}
-
 section h2 {
-    /* Headers on cards 2-4 */
+    /* headers/labels on work and contact cards */
     margin-bottom: 40px;
     border: solid;
     border-width: 2px;
@@ -140,81 +92,87 @@ section h2 {
 
 
 
-/* 5|| card 2 (about): */
+/* 3|| intro card: */
 
-#about {
-    align-content: center;
-    max-width: 900px;
-    padding: 100px 200px 50px 200px;
+h1 {
+    /* name settings */
+    font-size: 70px;
 }
 
-.profile {
-    /* icon and about me text */
-    display: flex;
-    align-items: center;
+.about {
+    /* div holding icon and about me text */
+    align-items: flex-start;
 }
 
 section img {
+    /* cat pic settings */
     margin-right: 50px;
     border-radius: 100%;
     height: 100px;
 }
 
-hr {
-    margin-top: 50px;
-    border-width: 1px;
-    border-color: var(--dgray);
-    width: 100%;
-}
 
-.buttonz {
-    /* pair of buttons on #about card - both */
-    gap: 20px;
+
+/* 4|| navigation card */
+
+button {
+    /* button settings */
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
     justify-content: space-between;
+    gap: 20px;
+    border: none;
+    padding: 15px;
+    background-color: var(--dgray);
+    color: var(--offwhite);
+    text-decoration: none;
+    font-size: 23px;
 }
 
 
 
-/* 6|| card 3 (work): */
+/* 5|| work/portfolio card: */
 
-/* #work {
+/* {
     
 } */
 
 
 
-/* 7|| card 4 (contact): */
+/* 6|| contact card: */
 
 .eg {
-    /* box holding the email and gh flexboxes */
-    display: flex;
+    /* div holding the email and gh icons and text */
     flex-flow: column wrap;
 }
 
-.email, .github {
-    /* email and github line flexboxes */
-    display: flex;
+.email,
+.github {
+    /* individual divs holding the email and gh boxes, respectively */
     align-items: center;
     line-height: 2px;
 }
 
 i {
+    /* icon settings */
     margin-right: 20px;
-    color: var(--dgray);
+    color: var(--lgray);
 }
+
+a {
+    /* link text settings */
+    color: var(--offwhite);
+}
+
+
 
 /* 8|| footer: */
 
 #copyright {
-    margin-left: 250px;
-    margin-right: 250px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 40px;
     text-align: left;
     font-size: 20px;
 }
-
 
 
 
@@ -223,7 +181,7 @@ i {
 @media (hover: hover) {
     /* expand/about link hover effect */
     .expbutt:hover {
-        color: black;
+        color: var(--black);
         transition: color 0.3s;
     }
 }
@@ -232,8 +190,8 @@ i {
     /* button pair hover effect */
     button:hover {
         cursor: pointer;
-        border-color: black;
-        color: black;
+        border-color: var(--black);
+        color: var(--black);
         transition: 0.3s;
     }
 }
@@ -241,7 +199,7 @@ i {
 @media (hover: hover) {
     /* github link hover effect */
     .gha:hover {
-        color: black;
+        color: var(--black);
         transition: color 0.3s;
     }
 }
