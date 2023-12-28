@@ -21,22 +21,31 @@ TO DO:
     /* variables */
 
     /* colors */
+
+    /* white */
     --white: #fff;
-    --lgray: #c9c9c9;
-    /* subtle gray */
-    --gray: #bebebe;
-    /* darker subtle gray */
-    --dgray: #070707;
-    /* very dark gray */
+    /* black */
     --black: #000;
-    --blue: #bfe5e5;
     /* light blue */
+    --blue: #bfe5e5;
+
+    /* subtle light gray */
+    --lgray: #c9c9c9;
+    /* subtle light gray (slightly darker) */
+    --gray: #bebebe;
+    /* very dark gray */
+    --dgray: #070707;
+
+    /* default background dark gray */
+    --bg: #0c0f0f;
+    /* lighter gray in gradient background */
+    --bglgray: #2c3232;
 }
 
 body {
     margin: 60px;
-    background-color: var(--dgray);
-    background-image: linear-gradient(var(--black), #768989);
+    background-color: var(--bg);
+    background-image: linear-gradient(var(--dgray), var(--bglgray));
     /* 918 px of one color, then gradient below homepage */
     color: var(--lgray);
 }
@@ -143,6 +152,17 @@ main p {
 
 /* 4|| navigation card */
 
+/* positioning */
+
+.navi {
+    /* for internet explorer */
+    position: static;
+    /* for safari */
+    position: -webkit-sticky;
+    /* for coolguys */
+    position: sticky;
+    top: 0;
+}
 
 /* buttons */
 
