@@ -12,7 +12,7 @@ TO DO:
 
 /* 1|| gen: */
 
-* { 
+* {
     /* REMEMBER: this changes the default for EVERYTHING */
     box-sizing: border-box;
 }
@@ -22,17 +22,22 @@ TO DO:
 
     /* colors */
     --white: #fff;
-    --lgray: #c9c9c9; /* subtle gray */
-    --gray: #bebebe; /* darker subtle gray */
-    --dgray: #070707; /* very dark gray */
+    --lgray: #c9c9c9;
+    /* subtle gray */
+    --gray: #bebebe;
+    /* darker subtle gray */
+    --dgray: #070707;
+    /* very dark gray */
     --black: #000;
-    --blue: #bfe5e5; /* light blue */
+    --blue: #bfe5e5;
+    /* light blue */
 }
 
 body {
     margin: 60px;
     background-color: var(--dgray);
-    background-image: linear-gradient(var(--black), #768989); /* 918 px of one color, then gradient below homepage */
+    background-image: linear-gradient(var(--black), #768989);
+    /* 918 px of one color, then gradient below homepage */
     color: var(--lgray);
 }
 
@@ -90,9 +95,10 @@ h2 {
     /* settings for all header text */
     font-family: Inter, 'Lucida Sans', sans-serif;
     letter-spacing: 2px;
+    color: var(--gray);
 }
 
-section h2 {
+h2 {
     /* settings for headers/labels on #work and #contact cards */
     margin-bottom: 40px;
     border: solid;
@@ -107,24 +113,38 @@ p {
 
 
 
-/* 3|| intro card: */
+/* 3|| about/intro card: */
 
 h1 {
     /* name settings */
     font-size: 70px;
 }
 
-section img {
+main {
+    /* settings for box containing about text and cat pic */
+    display: inline-block;
+}
+
+main img {
     /* cat pic settings */
     display: inline-block;
+    vertical-align: middle;
     margin-right: 30px;
     border-radius: 100%;
     height: 100px;
 }
 
+main p {
+    /* about text settings */
+    vertical-align: middle;
+}
+
 
 
 /* 4|| navigation card */
+
+
+/* buttons */
 
 button {
     /* button settings */
@@ -133,12 +153,23 @@ button {
     /* margin, border, padding */
     border: none;
     padding: 15px;
-    
+
     /* style */
     background-color: var(--dgray);
     color: var(--blue);
     text-decoration: none;
     font-size: 23px;
+}
+
+@media (hover: hover) {
+
+    /* button hover effect */
+    button:hover {
+        cursor: pointer;
+        border-color: var(--black);
+        color: var(--black);
+        transition: 0.3s;
+    }
 }
 
 
@@ -171,9 +202,21 @@ i {
     color: var(--lgray);
 }
 
+
+/* linked text */
+
 a {
-    /* link text settings */
+    /* linked text settings */
     color: var(--blue);
+}
+
+@media (hover: hover) {
+
+    /* linked text hover effect */
+    a:hover {
+        color: var(--black);
+        transition: color 0.3s;
+    }
 }
 
 
@@ -188,29 +231,3 @@ a {
 
 
 /* 9|| media queries: */
-
-@media (hover: hover) {
-    /* expand/about link hover effect */
-    .expbutt:hover {
-        color: var(--black);
-        transition: color 0.3s;
-    }
-}
-
-@media (hover: hover) {
-    /* button pair hover effect */
-    button:hover {
-        cursor: pointer;
-        border-color: var(--black);
-        color: var(--black);
-        transition: 0.3s;
-    }
-}
-
-@media (hover: hover) {
-    /* github link hover effect */
-    .gha:hover {
-        color: var(--black);
-        transition: color 0.3s;
-    }
-}
