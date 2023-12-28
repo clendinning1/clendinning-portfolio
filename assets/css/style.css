@@ -19,20 +19,21 @@ TO DO:
 
 :root {
     /* variables */
+
+    /* colors */
     --white: #fff;
-    --offwhite: #ebebeb;
     --lgray: #c9c9c9; /* subtle gray */
     --gray: #bebebe; /* darker subtle gray */
     --dgray: #070707; /* very dark gray */
     --black: #000;
-    --blue: #b9ffff; /* light blue */
+    --blue: #bfe5e5; /* light blue */
 }
 
 body {
+    margin: 60px;
     background-color: var(--dgray);
     background-image: linear-gradient(var(--black), #768989); /* 918 px of one color, then gradient below homepage */
-    color: white;
-    margin: 60px;
+    color: var(--lgray);
 }
 
 span {
@@ -45,11 +46,15 @@ span {
 /* 2|| all content: */
 
 content {
-    /* the box holding all cards */
+    /* box containing all cards */
+
+    /* flexbox */
     display: flex;
     flex-flow: column wrap;
     align-content: center;
     align-items: center;
+
+    /* style */
     text-align: center;
     font-family: Manrope, Helvetica, sans-serif;
     font-size: 25px;
@@ -57,37 +62,47 @@ content {
 
 section {
     /* settings for each individual card */
+
+    /* flexbox */
     display: flex;
     flex-flow: column wrap;
     align-content: center;
     align-items: center;
-    /* values go clockwise: top, right, bottom, left */
+
+    /* margin, border, and padding */
     margin: 50px 0px 50px 0px;
     border: solid;
     border-width: 3px;
-    padding: 40px 400px 40px 400px;
+    padding: 50px;
+
+    /* style */
     border-color: var(--lgray);
     background-color: var(--dgray);
 }
 
 div {
-    /* settings for stuff inside sections */
+    /* for adding flexboxes inside sections */
     display: flex;
 }
 
 h1,
 h2 {
-    /* all header text */
+    /* settings for all header text */
     font-family: Inter, 'Lucida Sans', sans-serif;
     letter-spacing: 2px;
 }
 
 section h2 {
-    /* headers/labels on work and contact cards */
+    /* settings for headers/labels on #work and #contact cards */
     margin-bottom: 40px;
     border: solid;
     border-width: 2px;
     padding: 10px 30px 10px 30px;
+}
+
+p {
+    /* general text settings */
+    display: inline-block;
 }
 
 
@@ -99,14 +114,10 @@ h1 {
     font-size: 70px;
 }
 
-.about {
-    /* div holding icon and about me text */
-    align-items: flex-start;
-}
-
 section img {
     /* cat pic settings */
-    margin-right: 50px;
+    display: inline-block;
+    margin-right: 30px;
     border-radius: 100%;
     height: 100px;
 }
@@ -117,15 +128,15 @@ section img {
 
 button {
     /* button settings */
-    display: flex;
-    flex-flow: row wrap;
-    align-content: center;
-    justify-content: space-between;
-    gap: 20px;
+    display: inline-block;
+
+    /* margin, border, padding */
     border: none;
     padding: 15px;
+    
+    /* style */
     background-color: var(--dgray);
-    color: var(--offwhite);
+    color: var(--blue);
     text-decoration: none;
     font-size: 23px;
 }
@@ -142,14 +153,14 @@ button {
 
 /* 6|| contact card: */
 
-.eg {
-    /* div holding the email and gh icons and text */
+.con {
+    /* div containing the email and gh icons and text */
     flex-flow: column wrap;
 }
 
 .email,
 .github {
-    /* individual divs holding the email and gh boxes, respectively */
+    /* individual divs containing the email and gh boxes, respectively */
     align-items: center;
     line-height: 2px;
 }
@@ -162,14 +173,14 @@ i {
 
 a {
     /* link text settings */
-    color: var(--offwhite);
+    color: var(--blue);
 }
 
 
 
 /* 8|| footer: */
 
-#copyright {
+.copyright {
     text-align: left;
     font-size: 20px;
 }

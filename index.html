@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Remember to load reset.css before style.css-->
+    <!--Remember to always load reset.css before style.css!-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://kit.fontawesome.com/3dfe415d65.js" crossorigin="anonymous"></script>
@@ -19,18 +19,22 @@
     <content>
         <!--Intro-->
         <section id="intro">
-            <!--'section' gives card formatting-->
+            <!--'section' element gives the nice card formatting.-->
+            <!--'#intro' id links to this section.-->
             <h1>clendinning</h1>
             <div class="about">
-                <!--'about' div holds intro text and cat pic-->
+                <!--'about' div element contains intro text and cat pic.-->
                 <img src=".\assets\images\catpic.jpg" alt="Alt Text: photo of my cat!"></img>
                 <p>HTML, CSS, Javascript.</p>
             </div>
         </section>
 
         <!--Navigation-->
-        <section id="navi">
+        <section class="navi">
+            <!--'section' element gives the nice card formatting.-->
+            <!--'.navi' class will add formatting specific to this card when i do it.-->
             <nav>
+                <!--'nav' element contains buttons.-->
                 <button class="wbutt" title="Portfolio" onclick="location.href='#work'">
                     work
                 </button>
@@ -42,27 +46,37 @@
 
         <!--Work (portfolio)-->
         <section id="work">
+            <!--'section' element gives the nice card formatting.-->
+            <!--'#work' id links to this section.-->
             <h2>work</h2>
             <p>here will be many images</p>
         </section>
 
         <!--Contact-->
         <section id="contact">
+            <!--'section' element gives the nice card formatting.-->
+            <!--'#contact' id links to this section.-->
             <h2>contact</h2>
-            <div class="eg">
+            <div class="con">
+                <!--'con' div contains the 'email' and 'github' divs.-->
                 <div class="email">
+                    <!--'email' div contains the icon and email address.-->
                     <i class="fa-solid fa-envelope" title="Email"></i><p>azureocean@protonmail.com</p>
                 </div>
                 <div class="github">
+                    <!--'github' div contains the icon and gh link.-->
                     <i class="fa-brands fa-github" title="GitHub"></i>
                     <a class="gha" href="https://github.com/clendinning1/">clendinning1</a>
                 </div>
             </div>
         </section>
 
-        <!--Footer. copyright.-->
+        <!--Footer (copyright)-->
         <footer>
-            <section id="copyright">
+            <!--'footer' element contains footer/copyright.-->
+            <section class="copyright">
+                <!--'section' element gives the nice card formatting.-->
+                <!--'.copyright' class adds formatting specific to this card.-->
                 &copy; clendinning 2024.
             </section>
         </footer>
