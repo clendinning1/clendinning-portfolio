@@ -162,6 +162,7 @@ main p {
     /* for coolguys */
     position: sticky;
     top: 0;
+    padding: 10px 300px 10px 300px;
 }
 
 /* buttons */
@@ -171,27 +172,36 @@ button {
     display: inline-block;
 
     /* margin, border, padding */
-    border: none;
+    border: solid;
+    border-width: 1px;
     padding: 15px;
 
     /* style */
     background-color: var(--dgray);
-    color: var(--blue);
+    color: var(--lgray);
     text-decoration: none;
     font-size: 23px;
+
+
+    /* animation */
+    
+    /* default */
+    transition: color 0.2s linear;
+    /* opera */
+    -o-transition: color 0.2s linear;
+    /* IE 10 */
+    -ms-transition: color 0.2s linear;
+    /* firefox */
+    -moz-transition: color 0.2s linear;
+    /* safari and chrome */
+    -webkit-transition: color 0.2s linear;
 }
 
-@media (hover: hover) {
-
-    /* button hover effect */
-    button:hover {
-        cursor: pointer;
-        border-color: var(--black);
-        color: var(--black);
-        transition: 0.3s;
-    }
+button:hover {
+    /* triggers button animation */
+    color: var(--dgray);
+    cursor: pointer;
 }
-
 
 
 /* 5|| work/portfolio card: */

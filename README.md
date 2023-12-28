@@ -6,6 +6,7 @@ used
 - google fonts inter y manrope
 - normalize.css button settings (include license???????????)
 - font awesome
+- https://stackoverflow.com/questions/10995165/what-is-the-opposite-of-hover-on-mouse-leave
 
 learnt avec
 - MDN https://developer.mozilla.org/en-US/
