@@ -1,12 +1,11 @@
 /* 
 TO DO:
-1. build the cards visually first, then worry about the media queries.
-2. make sure to use flexboxes so the responsiveness (mobile variant) is kosher.
 3. media queries for responsiveness.
-4. use variables in css. 
-5. media query it up for fun styling. (hidden bits)
 6. Add keyboard focus????? other accessibility stuff??????
-7. make somethign fancy happen when you hover over the work
+8. fix bugs (nav disappearing under work images)
+9. fix background
+10. fix image placement for work
+11. fix it being ugly
 */
 
 
@@ -242,7 +241,7 @@ button:hover {
 }
 
 .item1, .item2, .item3, .item4 {
-    /* need this for the itemtxt to work */
+    /* need this for the itemtxt positioning to work */
     position: relative;
 }
 
@@ -277,6 +276,15 @@ button:hover {
     /* item images 1-4 */
     border: solid var(--lgray);
     border-width: 3px;
+    transition: 0.3s;
+}
+
+.item1 img:hover,
+.item2 img:hover,
+.item3 img:hover,
+.item4 img:hover {
+    /* image hover effect */
+    opacity: 0.3;
 }
 
 .item2 img,
@@ -317,13 +325,11 @@ a {
     color: var(--blue);
 }
 
-@media (hover: hover) {
 
-    /* linked text hover effect */
-    a:hover {
-        color: var(--black);
-        transition: color 0.3s;
-    }
+/* linked text hover effect */
+a:hover {
+    color: var(--black);
+    transition: color 0.3s;
 }
 
 
