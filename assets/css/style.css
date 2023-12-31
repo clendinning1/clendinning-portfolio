@@ -6,6 +6,7 @@ TO DO:
 4. use variables in css. 
 5. media query it up for fun styling. (hidden bits)
 6. Add keyboard focus????? other accessibility stuff??????
+7. make somethign fancy happen when you hover over the work
 */
 
 
@@ -240,13 +241,25 @@ button:hover {
     margin: 0px;
 }
 
+.item1, .item2, .item3, .item4 {
+    /* need this for the itemtxt to work */
+    position: relative;
+}
+
 .itemtxt {
     /* div containing the text over the portfolio images */
     position: absolute;
-    bottom: 8px;
-    left: 16px;
-    font-size: 18px;
-    color: red;
+    bottom: 2%;
+    left: -10px;
+
+    border: solid;
+    border-color: var(--lgray);
+    padding: 10px;
+
+    font-size: 30px;
+    font-weight: bold;
+    background-color: var(--lgray);
+    color: var(--dgray);
 }
 
 .item1 img,
