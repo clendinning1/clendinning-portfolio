@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Remember to load reset.css before style.css-->
+    <!--Remember to always load reset.css before style.css!-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/3dfe415d65.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Manrope:wght@200&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/reset.css">
@@ -15,52 +16,111 @@
 </head>
 
 <body>
-    <!--Content (cards 1-4).-->
     <content>
-        <!--Intro ID (first card). everything else is hidden until clicking "expand".-->
-        <section id="intro">
-            <h1>clendinning.</h1>
-            <button class="expbutt">
-                <a href="#about">expand</a>
-            </button>
+        <!--Intro-->
+        <section id="about">
+            <!--'section' element gives the nice card formatting.-->
+            <!--'#about' id links to this section.-->
+            <h1>clendinning</h1>
+            <main>
+                <!--'main' element contains about text and cat pic.-->
+                <img src=".\assets\images\catpic.jpg" alt="Alt Text: photo of my cat!"></img>
+                <p>HTML, CSS, Javascript.</p>
+            </main>
         </section>
 
-        <!--About ID (second card). contains a short "about me" with two buttons for "work" and "contact".-->
-        <section id="about">
-            <h2>about</h2>
-            <!--dolly pic :3-->
-            <p>prgrmr, artist, professional sillyguy ;)</p>
-            <div>
-                <button class="wbutt">
-                    <a href="#work">work</a>
+        <!--Navigation-->
+        <section class="navi">
+            <!--'section' element gives the nice card formatting.-->
+            <!--'.navi' class will adds positioning.-->
+            <nav>
+                <!--'nav' element contains buttons.-->
+                <button class="wbutt" onclick="location.href='#work'">
+                    work
                 </button>
-                <button class="cbutt">
-                    <a href="#contact">contact</a>
+                <button class="cbutt" onclick="location.href='#contact'">
+                    contact
                 </button>
+            </nav>
+        </section>
+
+        <!--Work (portfolio)-->
+        <section id="work">
+            <!--'section' element gives the nice card formatting.-->
+            <!--'#work' id links to this section.-->
+            <h2>work</h2>
+            <p>here will be many images</p>
+            <div class="portfolio">
+                <!--'.portfolio' class contains the images and links to my various projects.-->
+                <div class="item1">
+                    <a href="https://clendinning1.github.io/accessibility-ch01/">
+                        <img src=".\assets\images\horiseon.jpg"
+                            alt="Alt Text: photo of the top of a website titled 'Horiseon'"></img>
+                        <div class="itemtxt">Horiseon</div>
+                    </a>
+                </div>
+                <div class="item2">
+                    <a href="#work">
+                        <img src=".\assets\images\disgusting-placeholder.png"
+                            alt="Alt Text: wretched ms paint image with the words 'coming soon (i promise)'"></img>
+                            <div class="itemtxt">Coming Soon</div>
+                    </a>
+                </div>
+                <div class="item3">
+                    <a href="#work">
+                        <img src=".\assets\images\disgusting-placeholder.png"
+                            alt="Alt Text: wretched ms paint image with the words 'coming soon (i promise)'"></img>
+                        <div class="itemtxt">Coming Soon</div>
+                    </a>
+                </div>
+                <div class="item4">
+                    <a href="#work">
+                        <img src=".\assets\images\disgusting-placeholder.png"
+                            alt="Alt Text: wretched ms paint image with the words 'coming soon (i promise)'"></img>
+                        <div class="itemtxt">Coming Soon</div>
+                    </a>
+                </div>
+
             </div>
         </section>
 
-        <!--Work ID (third card). this is the portfolio proper with previews of other projects.-->
-        <section id="work">
-            <h2>work</h2>
-            <p>here will be many images</p>
-        </section>
-
-        <!--Contact ID (fourth card). this is my contact info. when the button is clicked, it should appear underneath the "about"(??)-->
+        <!--Contact-->
         <section id="contact">
+            <!--'section' element gives the nice card formatting.-->
+            <!--'#contact' id links to this section.-->
             <h2>contact</h2>
-            <!--email icon-->
-            <p>azureocean@protonmail.com</p>
-            <!--github icon-->
-            <p>clendinning1</p>
+            <div class="con">
+                <!--'.con' class contains the 'email' and 'github' divs.-->
+                <div class="email">
+                    <!--'.email' class contains the icon and email address.-->
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>azureocean@protonmail.com</p>
+                </div>
+                <div class="github">
+                    <!--'.github' class contains the icon and gh link.-->
+                    <i class="fa-brands fa-github"></i>
+                    <a href="https://github.com/clendinning1/">clendinning1</a>
+                </div>
+            </div>
         </section>
 
-        <!--Footer. copyright.-->
+        <!--Footer (copyright)-->
         <footer>
-            <section id="copyright">
+            <!--'footer' element contains footer/copyright.-->
+            <section class="copyright">
+                <!--'section' element gives the nice card formatting.-->
+                <!--'.copyright' class adds formatting specific to this card.-->
                 &copy; clendinning 2024.
-                </p>
+            </section>
         </footer>
+
+        <!--sillymode-->
+        <!--<div class="sillay">
+            <button class="sillay" onclick="">
+                engage sillymode
+            </button>
+        </div>-->
+
     </content>
 </body>
 

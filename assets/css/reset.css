@@ -6,15 +6,30 @@
     display: block;
 }
 
-title, script {
+title, script, #fa-main, #fa-v4-shims, #fa-v4-font-face, #fa-v5-font-face {
     display: none;
 }
 
-a {
-    color: white;
+a, p {
     text-decoration-line: none;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
+p {
+    display: block;
+}
+
+a {
+    display: inline;
+}
+
+sub {
+    display: inline;
+    vertical-align: sub;
+}
 
 
 
