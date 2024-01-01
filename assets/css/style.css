@@ -243,10 +243,18 @@ button:hover {
 
 .portfolio {
     /* div containing the portfolio images */
+    /* wrap makes them wrap down to the next line */
     flex-flow: row wrap;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
+    /* justify-content edits inline spacing */
+    justify-content: space-evenly;
+    /* align-items edits vertical spacing */
+    align-items: flex-start;
+    /* align-content edits line spacing */
+    align-content: stretch;
+}
+
+#work h2 {
+    margin-bottom: 15px;
 }
 
 /* portfolio image container settings */
@@ -254,25 +262,18 @@ button:hover {
 .item1,
 .item2,
 .item3,
-.item4 {
+.item4,
+.item5 {
     /* settings for each item (boxes containing imgs) */
     /* need relative positioning for the itemtxt positioning to work */
     position: relative;
-    padding-right: 5px;
-    padding-left: 5px;
 }
-
-/* .item2 { */
-    /* fixes position for top two items/imgs */
-    /* padding-top: 100px;
-    padding-right: 200px;
-} */
 
 .itemtxt {
     /* labels/names/titles/text over the portfolio images */
     position: absolute;
-    bottom: 35px;
-    left: 35px;
+    bottom: 25px;
+    left: 0px;
 
     border: solid;
     border-color: var(--lgray);
@@ -289,48 +290,37 @@ button:hover {
 .item1 img,
 .item2 img,
 .item3 img,
-.item4 img {
+.item4 img,
+.item5 img {
     /* for every img */
-    margin: 10px;
     border: solid var(--lgray);
     border-width: 3px;
-    transition: 0.0.15s;
+    transition: 0.15s;
 }
-
-/* max width before images explode = 700px */
 
 .item1 img {
     /* image 1 */
-    max-width: 650px;
+    width: 1500px;
+    max-height: 450px;
 }
 
 .item2 img,
 .item3 img,
-.item4 img {
-    /* images 2-4 */
-    max-width: 600px;
+.item4 img,
+.item5 img {
+    /* images 2-5 */
+    width: 650px;
+    height: 190px;
 }
 
 .item1 img:hover,
 .item2 img:hover,
 .item3 img:hover,
-.item4 img:hover {
+.item4 img:hover,
+.item5 img:hover {
     /* transparency effect on hover for work images */
     opacity: 0.3;
 }
-
-.item1 img:hover {
-    /* adds 40px to sizing on hover */
-    max-width: 750px;
-}
-
-.item2 img:hover,
-.item3 img:hover,
-.item4 img:hover {
-    /* resize effect on hover for work images */
-    max-width: 650px;
-}
-
 
 
 /* 6|| contact card: */
@@ -366,7 +356,7 @@ a {
 /* linked text hover effect */
 a:hover {
     color: var(--black);
-    transition: color 0.0.15s;
+    transition: color 0.2s;
 }
 
 
