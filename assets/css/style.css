@@ -220,7 +220,8 @@ button:hover {
     /* triggers button animation */
     /* use line below if different border and text colors */
     /* border-color: var(--dgray); */
-    color: var(--dgray);
+    background-color: var(--bg);
+    color: var(--bg);
     cursor: pointer;
 }
 
@@ -311,6 +312,10 @@ button:hover {
 
 /* 6|| contact card: */
 
+/* #contact {
+    margin-top: 500px;
+} */
+
 .con {
     /* div containing the email and gh icons and text */
     flex-flow: column wrap;
@@ -352,7 +357,8 @@ a:hover {
 .copyright {
     min-width: 0px;
     width: 300px;
-    margin-bottom: 50px;
+    margin-top: 380px;
+    margin-bottom: 30px;
     padding: 15px 30px 15px 30px;
     text-align: left;
     font-size: 20px;
