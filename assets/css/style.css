@@ -267,6 +267,8 @@ button:hover {
     /* settings for each item (boxes containing imgs) */
     /* need relative positioning for the itemtxt positioning to work */
     position: relative;
+    /* animation speed for hover effect on portfolio */
+    transition: 0.15s;
 }
 
 .itemtxt {
@@ -295,7 +297,6 @@ button:hover {
     /* for every img */
     border: solid var(--lgray);
     border-width: 3px;
-    transition: 0.15s;
 }
 
 .item1 img {
@@ -313,11 +314,11 @@ button:hover {
     height: 190px;
 }
 
-.item1 img:hover,
-.item2 img:hover,
-.item3 img:hover,
-.item4 img:hover,
-.item5 img:hover {
+.item1:hover,
+.item2:hover,
+.item3:hover,
+.item4:hover,
+.item5:hover {
     /* transparency effect on hover for work images */
     opacity: 0.3;
 }
