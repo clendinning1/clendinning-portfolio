@@ -95,7 +95,7 @@ section {
     margin: 450px 0px 0px 0px;
     min-width: 700px;
     max-width: 1800px;
-    max-height: 1200px;
+    max-height: 1130px;
     border: solid;
     border-width: 2px;
     padding: 50px;
@@ -239,10 +239,12 @@ button:hover {
 #work {
     /* correct placement for header */
     flex-wrap: nowrap;
+    padding-bottom: 1100px;
 }
 
 .portfolio {
     /* div containing the portfolio images */
+
     /* wrap makes them wrap down to the next line */
     flex-flow: row wrap;
     /* justify-content edits inline spacing */
@@ -251,6 +253,10 @@ button:hover {
     align-items: flex-start;
     /* align-content edits line spacing */
     align-content: stretch;
+
+    margin-left: 70px;
+    margin-right: 70px;
+    max-width: 1550px;
 }
 
 #work h2 {
@@ -273,15 +279,18 @@ button:hover {
 
 .itemtxt {
     /* labels/names/titles/text over the portfolio images */
+    justify-content: center;
+
     position: absolute;
-    bottom: 25px;
+    bottom: 40px;
     left: 0px;
 
     border: solid;
     border-color: var(--lgray);
-    padding: 10px;
+    padding: 5px;
+    min-width: 100px;
 
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
     background-color: var(--lgray);
     color: var(--dgray);
@@ -297,11 +306,12 @@ button:hover {
     /* for every img */
     border: solid var(--lgray);
     border-width: 3px;
+    object-fit: cover;
 }
 
 .item1 img {
     /* image 1 */
-    width: 1500px;
+    width: 1390px;
     max-height: 450px;
 }
 
