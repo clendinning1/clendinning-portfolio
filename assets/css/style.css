@@ -30,7 +30,7 @@ TO DO:
     /* black */
     --black: #000;
     /* light blue */
-    --blue: #bfe5e5;
+    --blue: #99f7f7;
 
     /* subtle light gray */
     --lgray: #c9c9c9;
@@ -266,10 +266,7 @@ button:hover {
 /* portfolio image container settings */
 
 .item1,
-.item2,
-.item3,
-.item4,
-.item5 {
+.items {
     /* settings for each item (boxes containing imgs) */
     /* need relative positioning for the itemtxt positioning to work */
     position: relative;
@@ -277,8 +274,27 @@ button:hover {
     transition: 0.15s;
 }
 
-.itemtxt {
-    /* labels/names/titles/text over the portfolio images */
+.item1txt {
+    /* labels/names/titles/text over the FIRST portfolio image */
+    justify-content: center;
+
+    position: absolute;
+    bottom: 40px;
+    left: 0px;
+
+    border: solid;
+    border-color: var(--lgray);
+    padding: 5px;
+
+    font-size: 40px;
+    font-weight: bold;
+    background-color: var(--lgray);
+    color: var(--dgray);
+}
+
+/* i'm definitely repeating myself here but me tired */
+.itemstxt {
+    /* labels/names/titles/text over the OTHER portfolio images */
     justify-content: center;
 
     position: absolute;
@@ -299,14 +315,12 @@ button:hover {
 /* portfolio image settings */
 
 .item1 img,
-.item2 img,
-.item3 img,
-.item4 img,
-.item5 img {
+.items img {
     /* for every img */
     border: solid var(--lgray);
     border-width: 3px;
     object-fit: cover;
+    opacity: 0.8;
 }
 
 .item1 img {
@@ -315,20 +329,14 @@ button:hover {
     max-height: 450px;
 }
 
-.item2 img,
-.item3 img,
-.item4 img,
-.item5 img {
+.items img {
     /* images 2-5 */
     width: 650px;
     height: 190px;
 }
 
 .item1:hover,
-.item2:hover,
-.item3:hover,
-.item4:hover,
-.item5:hover {
+.items:hover {
     /* transparency effect on hover for work images */
     opacity: 0.3;
 }
