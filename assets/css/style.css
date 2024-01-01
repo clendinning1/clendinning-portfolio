@@ -164,6 +164,7 @@ main p {
 /* 4|| navigation card */
 
 .navi {
+    /* formatting for section holding buttons */
     /* positioning */
     /* for internet explorer */
     position: static;
@@ -187,7 +188,7 @@ main p {
 button {
     /* button settings */
     display: inline-block;
-    width: 150px; 
+    width: 150px;
 
     /* margin, border, padding */
     margin: 12px 12px 0px 12px;
@@ -205,15 +206,15 @@ button {
     /* animation */
 
     /* default */
-    transition: color 0.2s linear;
+    transition: color 0.15s linear;
     /* opera */
-    -o-transition: color 0.2s linear;
+    -o-transition: color 0.15s linear;
     /* IE 10 */
-    -ms-transition: color 0.2s linear;
+    -ms-transition: color 0.15s linear;
     /* firefox */
-    -moz-transition: color 0.2s linear;
+    -moz-transition: color 0.15s linear;
     /* safari and chrome */
-    -webkit-transition: color 0.2s linear;
+    -webkit-transition: color 0.15s linear;
 }
 
 button:hover {
@@ -235,33 +236,43 @@ button:hover {
 
 /* 5|| work/portfolio card: */
 
+#work {
+    /* correct placement for header */
+    flex-wrap: nowrap;
+}
+
 .portfolio {
     /* div containing the portfolio images */
     flex-flow: row wrap;
     align-content: center;
     align-items: center;
     justify-content: center;
-    margin: 0px;
 }
 
-.item1, .item2, .item3, .item4 {
+/* portfolio image container settings */
+
+.item1,
+.item2,
+.item3,
+.item4 {
     /* settings for each item (boxes containing imgs) */
-    position: relative;
     /* need relative positioning for the itemtxt positioning to work */
-    padding-right: 25px;
-    padding-left: 25px;
+    position: relative;
+    padding-right: 5px;
+    padding-left: 5px;
 }
 
-.item1 {
-    padding-right: 50px; 
-    /* FIX THIS!!!!!!!!!!!! HERE IS THE PROBLEM */
-}
+/* .item2 { */
+    /* fixes position for top two items/imgs */
+    /* padding-top: 100px;
+    padding-right: 200px;
+} */
 
 .itemtxt {
-    /* div containing the text over the portfolio images */
+    /* labels/names/titles/text over the portfolio images */
     position: absolute;
-    bottom: 2%;
-    left: -10px;
+    bottom: 35px;
+    left: 35px;
 
     border: solid;
     border-color: var(--lgray);
@@ -273,7 +284,7 @@ button:hover {
     color: var(--dgray);
 }
 
-/* image settings */
+/* portfolio image settings */
 
 .item1 img,
 .item2 img,
@@ -283,38 +294,46 @@ button:hover {
     margin: 10px;
     border: solid var(--lgray);
     border-width: 3px;
-    transition: 0.3s;
+    transition: 0.0.15s;
 }
 
+/* max width before images explode = 700px */
+
 .item1 img {
-    /* image sizing item1 */
-    max-width: 800px;
-    max-height: 450px;
+    /* image 1 */
+    max-width: 650px;
 }
 
 .item2 img,
 .item3 img,
 .item4 img {
-    /* image sizing items 2-4 */
-    max-width: 750px;
-    max-height: 340px;
+    /* images 2-4 */
+    max-width: 600px;
 }
 
 .item1 img:hover,
 .item2 img:hover,
 .item3 img:hover,
 .item4 img:hover {
-    /* image hover effect */
+    /* transparency effect on hover for work images */
     opacity: 0.3;
+}
+
+.item1 img:hover {
+    /* adds 40px to sizing on hover */
+    max-width: 750px;
+}
+
+.item2 img:hover,
+.item3 img:hover,
+.item4 img:hover {
+    /* resize effect on hover for work images */
+    max-width: 650px;
 }
 
 
 
 /* 6|| contact card: */
-
-/* #contact {
-    margin-top: 500px;
-} */
 
 .con {
     /* div containing the email and gh icons and text */
@@ -347,7 +366,7 @@ a {
 /* linked text hover effect */
 a:hover {
     color: var(--black);
-    transition: color 0.3s;
+    transition: color 0.0.15s;
 }
 
 
