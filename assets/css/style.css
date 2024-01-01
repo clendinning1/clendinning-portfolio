@@ -2,10 +2,13 @@
 TO DO:
 3. media queries for responsiveness.
 6. Add keyboard focus????? other accessibility stuff??????
-8. fix bugs (nav disappearing under work images)
+8. fix bugs (nav disappearing under work images; check that reset.css is effective)
 9. fix background
 10. fix image placement for work
 11. fix it being ugly
+12. i want to make only one card appear at a time but i think i need js for that
+13. add a "back to top" button?
+    - should i make each card in a left to right clickie instead of all one on page ? sigh
 */
 
 
@@ -44,13 +47,13 @@ TO DO:
 
 body {
 
-    /* make scrollbar look better */
+    /* make scrolling look better */
     /* background-image: url(.\assets\images\color.jpg), linear-gradient(var(--dgray), var(--bglgray));
     background-position: right bottom, left top;
     background-repeat: no-repeat, no-repeat; */
 
     background-color: var(--bg);
-    background-image: linear-gradient(var(--dgray), var(--bglgray));
+    /* background-image: linear-gradient(var(--dgray), var(--bglgray)); */
 
     color: var(--lgray);
 }
@@ -89,8 +92,10 @@ section {
     align-items: center;
 
     /* margin, border, and padding */
-    margin: 50px 0px 50px 0px;
+    margin: 450px 0px 0px 0px;
     min-width: 700px;
+    max-width: 1800px;
+    max-height: 1200px;
     border: solid;
     border-width: 2px;
     padding: 50px;
@@ -114,7 +119,7 @@ h2 {
 }
 
 h2 {
-    /* settings for headers/labels on #work and #contact cards */
+    /* settings for headers/titles/labels on #work and #contact cards */
     margin-bottom: 40px;
     border: solid;
     border-width: 1px;
@@ -129,11 +134,6 @@ p {
 
 
 /* 3|| about/intro card: */
-
-#about {
-    /* space between intro card and top of page */
-    margin-top: 400px;
-}
 
 h1 {
     /* name settings */
@@ -175,7 +175,6 @@ main p {
 
     /* margin, border, padding */
     margin-top: 0px;
-    margin-bottom: 400px;
     border: none;
     padding: 10px 300px 10px 300px;
     width: 100%;
@@ -188,8 +187,10 @@ main p {
 button {
     /* button settings */
     display: inline-block;
+    width: 150px; 
 
     /* margin, border, padding */
+    margin: 12px 12px 0px 12px;
     border: solid;
     border-width: 1px;
     padding: 15px;
@@ -223,13 +224,15 @@ button:hover {
     cursor: pointer;
 }
 
+#work,
+#contact {
+    /* makes the anchor link higher up on the page */
+    scroll-margin-top: 50px;
+}
+
+
 
 /* 5|| work/portfolio card: */
-
-#work {
-    /* size of work card */
-    max-width: 1800px;
-}
 
 .portfolio {
     /* div containing the portfolio images */
@@ -241,8 +244,16 @@ button:hover {
 }
 
 .item1, .item2, .item3, .item4 {
-    /* need this for the itemtxt positioning to work */
+    /* settings for each item (boxes containing imgs) */
     position: relative;
+    /* need relative positioning for the itemtxt positioning to work */
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.item1 {
+    padding-right: 50px; 
+    /* FIX THIS!!!!!!!!!!!! HERE IS THE PROBLEM */
 }
 
 .itemtxt {
@@ -261,22 +272,31 @@ button:hover {
     color: var(--dgray);
 }
 
-.item1 img,
-.item2 img,
-.item3 img,
-.item4 img {
-    /* items 1-4 */
-    margin: 10px;
-}
+/* image settings */
 
 .item1 img,
 .item2 img,
 .item3 img,
 .item4 img {
-    /* item images 1-4 */
+    /* for every img */
+    margin: 10px;
     border: solid var(--lgray);
     border-width: 3px;
     transition: 0.3s;
+}
+
+.item1 img {
+    /* image sizing item1 */
+    max-width: 800px;
+    max-height: 450px;
+}
+
+.item2 img,
+.item3 img,
+.item4 img {
+    /* image sizing items 2-4 */
+    max-width: 750px;
+    max-height: 340px;
 }
 
 .item1 img:hover,
@@ -285,14 +305,6 @@ button:hover {
 .item4 img:hover {
     /* image hover effect */
     opacity: 0.3;
-}
-
-.item2 img,
-.item3 img,
-.item4 img {
-    /* item images 2-4 */
-    max-width: 800px;
-    max-height: 800px;
 }
 
 
@@ -323,6 +335,7 @@ i {
 a {
     /* linked text settings */
     color: var(--blue);
+    text-decoration: underline;
 }
 
 
@@ -337,6 +350,10 @@ a:hover {
 /* 8|| footer: */
 
 .copyright {
+    min-width: 0px;
+    width: 300px;
+    margin-bottom: 50px;
+    padding: 15px 30px 15px 30px;
     text-align: left;
     font-size: 20px;
 }
