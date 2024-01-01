@@ -58,11 +58,6 @@ body {
     color: var(--lgray);
 }
 
-span {
-    display: inline;
-    color: var(--blue);
-}
-
 
 
 /* 2|| all content: */
@@ -274,27 +269,8 @@ button:hover {
     transition: 0.15s;
 }
 
-.item1txt {
-    /* labels/names/titles/text over the FIRST portfolio image */
-    justify-content: center;
-
-    position: absolute;
-    bottom: 40px;
-    left: 0px;
-
-    border: solid;
-    border-color: var(--lgray);
-    padding: 5px;
-
-    font-size: 40px;
-    font-weight: bold;
-    background-color: var(--lgray);
-    color: var(--dgray);
-}
-
-/* i'm definitely repeating myself here but me tired */
 .itemstxt {
-    /* labels/names/titles/text over the OTHER portfolio images */
+    /* labels/names/titles/text over the portfolio images */
     justify-content: center;
 
     position: absolute;
@@ -304,12 +280,16 @@ button:hover {
     border: solid;
     border-color: var(--lgray);
     padding: 5px;
-    min-width: 100px;
 
     font-size: 25px;
     font-weight: bold;
     background-color: var(--lgray);
     color: var(--dgray);
+}
+
+div span {
+    /* size for the FIRST portfolio image text */
+    font-size: 40px;
 }
 
 /* portfolio image settings */
