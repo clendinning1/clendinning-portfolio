@@ -387,7 +387,7 @@ a:hover {
 
 /* 9|| responsiveness (media queries): */
 
-/* at a third of my monitor size... */
+/* at a smaller width... */
 @media (max-width: 1400px) {
 
     section {
@@ -438,34 +438,24 @@ a:hover {
 
 
 /* at a phone width... */
-/* min width = 280 */
-/* max width = 430 */
-@media (max-width: 1400px) {
-    #work {
-        /* card height */
-        max-height: 1200px;
+@media (max-width: 500px) {
+
+    content {
+        font-size: 20px;
     }
 
-    .portfolio {
-        /* turns portfolio images into a single column */
-        flex-flow: column wrap;
-        align-items: center;
+    section {
+        min-width: 0px;
+        max-width: 330px;
+        max-height: 200px;
     }
 
-    div a {
-        /* resetting space between portfolio pics */
-        margin: 0px 0px 0px 0px;
+    h1 {
+        font-size: 40px;
     }
 
-    .item1 {
-        /* space between portfolio pics */
-        margin-top: 40px;
-        margin-bottom: 30px;
-    }
-
-    .items {
-        /* space between portfolio pics */
-        margin-bottom: 30px;
+    h2 {
+        font-size: 30px;
     }
 
     .item1 img {
