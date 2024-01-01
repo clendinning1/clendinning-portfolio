@@ -1,14 +1,12 @@
 /* 
 TO DO:
 3. media queries for responsiveness.
-6. Add keyboard focus????? other accessibility stuff??????
+6. Add keyboard focus
+    14. When users resize text up to 400% or change text spacing,
+    no information is lost. Text reflows in small windows (“viewports”) and when users make the text larger.
 8. fix bugs (nav disappearing under work images; check that reset.css is effective)
 9. fix background
-10. fix image placement for work
-11. fix it being ugly
-12. i want to make only one card appear at a time but i think i need js for that
 13. add a "back to top" button?
-    - should i make each card in a left to right clickie instead of all one on page ? sigh
 */
 
 
@@ -74,7 +72,7 @@ content {
     /* style */
     text-align: center;
     font-family: Manrope, Helvetica, sans-serif;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 section {
@@ -132,7 +130,15 @@ p {
 
 h1 {
     /* name settings */
-    font-size: 70px;
+    font-size: 90px;
+}
+
+hr {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-width: 2px;
+    border-color: var(--dgray);
+    width: 100%;
 }
 
 main {
@@ -144,6 +150,7 @@ main img {
     /* cat pic settings */
     display: inline-block;
     vertical-align: middle;
+    margin-top: 10px;
     margin-right: 30px;
     border-radius: 100%;
     height: 100px;
@@ -172,7 +179,7 @@ main p {
     /* margin, border, padding */
     margin-top: 0px;
     border: none;
-    padding: 10px 300px 10px 300px;
+    padding: 10px;
     width: 100%;
 
     background: transparent;
@@ -234,7 +241,7 @@ button:hover {
 #work {
     /* correct placement for header */
     flex-wrap: nowrap;
-    padding-bottom: 1100px;
+    padding-bottom: 1200px;
 }
 
 .portfolio {
@@ -267,6 +274,10 @@ button:hover {
     position: relative;
     /* animation speed for hover effect on portfolio */
     transition: 0.15s;
+}
+
+.item1 {
+    margin-top: 30px;
 }
 
 .itemstxt {
@@ -305,7 +316,7 @@ div span {
 
 .item1 img {
     /* image 1 */
-    width: 1390px;
+    width: 1370px;
     max-height: 450px;
 }
 
@@ -374,7 +385,105 @@ a:hover {
 
 
 
-/* 9|| sillymode: */
+/* 9|| responsiveness (media queries): */
+
+/* at a third of my monitor size... */
+@media (max-width: 1400px) {
+
+    section {
+        /* card width */
+        max-width: 700px;
+    }
+
+    #work {
+        /* work/portfolio card height */
+        max-height: 1200px;
+    }
+
+    .portfolio {
+        /* turns portfolio images into a single column */
+        flex-flow: column wrap;
+        align-items: center;
+    }
+
+    div a {
+        /* resetting space between portfolio pics */
+        margin: 0px 0px 0px 0px;
+    }
+
+    .item1 {
+        /* space between portfolio pics */
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+
+    .items {
+        /* space between portfolio pics */
+        margin-bottom: 30px;
+    }
+
+    .item1 img {
+        /* sizes down the first portfolio image to fit into the column */
+        width: 650px;
+        height: 250px;
+    }
+
+    .items img {
+        /* sizes down the other portfolio images to fit into the column */
+        width: 650px;
+        height: 150px;
+    }
+}
+
+
+
+/* at a phone width... */
+/* min width = 280 */
+/* max width = 430 */
+@media (max-width: 1400px) {
+    #work {
+        /* card height */
+        max-height: 1200px;
+    }
+
+    .portfolio {
+        /* turns portfolio images into a single column */
+        flex-flow: column wrap;
+        align-items: center;
+    }
+
+    div a {
+        /* resetting space between portfolio pics */
+        margin: 0px 0px 0px 0px;
+    }
+
+    .item1 {
+        /* space between portfolio pics */
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+
+    .items {
+        /* space between portfolio pics */
+        margin-bottom: 30px;
+    }
+
+    .item1 img {
+        /* sizes down the first portfolio image to fit into the column */
+        width: 650px;
+        height: 250px;
+    }
+
+    .items img {
+        /* sizes down the first portfolio image to fit into the column */
+        width: 650px;
+        height: 150px;
+    }
+}
+
+
+
+/* 10|| sillymode: */
 
 /* .sillay {
     display: block;
