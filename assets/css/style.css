@@ -1,9 +1,6 @@
 /* 
 TO DO:
-3. media queries for responsiveness.
 6. Add keyboard focus
-    14. When users resize text up to 400% or change text spacing,
-    no information is lost. Text reflows in small windows (“viewports”) and when users make the text larger.
 8. fix bugs (nav disappearing under work images; check that reset.css is effective)
 9. fix background
 13. add a "back to top" button?
