@@ -3,7 +3,7 @@
 clendinning1's portfolio.
 ## Usage
 ### Deployed site
-(https://clendinning1.github.io/clendinning-portfolio/)
+https://clendinning1.github.io/clendinning-portfolio/
 ### Website Preview
 ![Image of the deployed website.](./assets/images/website-preview.JPG)
 ## Credits
