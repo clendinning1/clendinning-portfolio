@@ -1,9 +1,7 @@
 /* 
 TO DO:
-6. Add keyboard focus
 8. fix bugs (nav disappearing under work images; check that reset.css is effective)
 9. fix background
-13. add a "back to top" button?
 */
 
 
@@ -53,6 +51,26 @@ body {
     color: var(--lgray);
 }
 
+/* scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--bg);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--gray);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--dgray);
+}
 
 
 /* 2|| all content: */
@@ -82,7 +100,7 @@ section {
     align-items: center;
 
     /* margin, border, and padding */
-    margin: 450px 0px 0px 0px;
+    margin: 380px 0px 0px 0px;
     min-width: 700px;
     max-width: 1800px;
     max-height: 1130px;
@@ -395,7 +413,8 @@ a:hover {
 
     #work {
         /* work/portfolio card height */
-        max-height: 1200px;
+        max-height: 700px;
+        padding-bottom: 1150px;
     }
 
     .portfolio {
@@ -449,7 +468,6 @@ a:hover {
         min-width: 0px;
         max-width: 330px;
         max-height: 200px;
-
         margin-top: 200px;
     }
 
