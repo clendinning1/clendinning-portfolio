@@ -3,9 +3,9 @@
 clendinning1's portfolio.
 ## Usage
 ### Deployed site
-(link)
+(https://clendinning1.github.io/clendinning-portfolio/)
 ### Website Preview
-![Image of the deployed website.](.\assets\images\website-preview.JPG)
+![Image of the deployed website.](./assets/images/website-preview.JPG)
 ## Credits
 ### Content Sources
 - Google Fonts: [Inter](https://fonts.google.com/specimen/Inter), [Manrope](https://fonts.google.com/specimen/Manrope)
