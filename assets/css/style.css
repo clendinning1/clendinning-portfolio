@@ -1,9 +1,7 @@
 /* 
-TO DO:
-6. Add keyboard focus
-8. fix bugs (nav disappearing under work images; check that reset.css is effective)
-9. fix background
-13. add a "back to top" button?
+play with later:
+1. gradient background
+2. highlight color
 */
 
 
@@ -53,6 +51,26 @@ body {
     color: var(--lgray);
 }
 
+/* scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--bg);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--gray);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--dgray);
+}
 
 
 /* 2|| all content: */
@@ -82,7 +100,7 @@ section {
     align-items: center;
 
     /* margin, border, and padding */
-    margin: 450px 0px 0px 0px;
+    margin: 380px 0px 0px 0px;
     min-width: 700px;
     max-width: 1800px;
     max-height: 1130px;
@@ -180,6 +198,7 @@ main p {
     width: 100%;
 
     background: transparent;
+    z-index: 100;
 }
 
 /* buttons */
@@ -190,7 +209,7 @@ button {
     width: 150px;
 
     /* margin, border, padding */
-    margin: 12px 12px 0px 12px;
+    margin: 9px 9px 0px 9px;
     border: solid;
     border-width: 1px;
     padding: 15px;
@@ -225,6 +244,7 @@ button:hover {
     cursor: pointer;
 }
 
+#about,
 #work,
 #contact {
     /* makes the anchor link higher up on the page */
@@ -394,7 +414,8 @@ a:hover {
 
     #work {
         /* work/portfolio card height */
-        max-height: 1200px;
+        max-height: 700px;
+        padding-bottom: 1150px;
     }
 
     .portfolio {
@@ -448,7 +469,6 @@ a:hover {
         min-width: 0px;
         max-width: 330px;
         max-height: 200px;
-
         margin-top: 200px;
     }
 
@@ -477,8 +497,9 @@ a:hover {
     
     button {
         /* button settings */
-        width: 125px;
+        width: 90px;
         margin: 5px;
+        padding: 10px;
         font-size: 18px;
     }
 
