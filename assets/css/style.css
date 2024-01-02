@@ -270,7 +270,7 @@ button:hover {
 .item1,
 .items {
     /* settings for each item (boxes containing imgs) */
-    /* need relative positioning for the itemtxt positioning to work */
+    /* need relative positioning for the itemstxt positioning to work */
     position: relative;
     /* animation speed for hover effect on portfolio */
     transition: 0.15s;
@@ -440,34 +440,93 @@ a:hover {
 /* at a phone width... */
 @media (max-width: 500px) {
 
+    /* general */
+
     content {
         font-size: 20px;
     }
 
     section {
+        /* card sizing and spacing */
         min-width: 0px;
         max-width: 330px;
         max-height: 200px;
+
+        margin-top: 200px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+    
+    
+    /* about/intro */
+
+    #about, #contact {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        max-height: 600px;
+
     }
 
     h1 {
         font-size: 40px;
     }
 
-    h2 {
-        font-size: 30px;
+    .navi {
+        margin-bottom: 90px;
+    }
+    
+    button {
+        /* button settings */
+        width: 125px;
+        margin: 5px;
+        font-size: 18px;
+    }
+
+    button:hover {
+        background-color: var(--dgray);
+        color: var(--lgray);
+    }
+
+
+    /* work/portfolio */
+
+    #work {
+        padding-bottom: 30px;
+    }
+
+    div span {
+        font-size: 25px;
+    }
+    
+    .itemstxt {
+        bottom: 10px;
+        left: 0px;
+        padding: 2px;
+        font-size: 20px;
     }
 
     .item1 img {
         /* sizes down the first portfolio image to fit into the column */
-        width: 650px;
-        height: 250px;
+        width: 300px;
+        height: 190px;
     }
 
     .items img {
         /* sizes down the first portfolio image to fit into the column */
-        width: 650px;
-        height: 150px;
+        width: 300px;
+        height: 120px;
+    }
+
+
+    /* contact, footer/copyright */
+
+    .copyright {
+        margin-top: 200px;
+        width: 170px;
+        font-size: 12px;
     }
 }
 
