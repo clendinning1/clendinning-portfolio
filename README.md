@@ -15,6 +15,7 @@ learnt avec
 - https://stackoverflow.com/questions/2906582/how-do-i-create-an-html-button-that-acts-like-a-link
 - https://stackoverflow.com/questions/9189810/css-display-inline-vs-inline-block
 - https://www.w3schools.com/Css/css3_backgrounds.asp
+- https://stackoverflow.com/questions/11501025/div-anchors-scrolling-too-far
 
 other
 - https://www.colorhexa.com/
