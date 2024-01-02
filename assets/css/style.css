@@ -190,7 +190,7 @@ button {
     width: 150px;
 
     /* margin, border, padding */
-    margin: 12px 12px 0px 12px;
+    margin: 9px 9px 0px 9px;
     border: solid;
     border-width: 1px;
     padding: 15px;
@@ -225,6 +225,7 @@ button:hover {
     cursor: pointer;
 }
 
+#about,
 #work,
 #contact {
     /* makes the anchor link higher up on the page */
@@ -477,8 +478,9 @@ a:hover {
     
     button {
         /* button settings */
-        width: 125px;
+        width: 90px;
         margin: 5px;
+        padding: 10px;
         font-size: 18px;
     }
 
