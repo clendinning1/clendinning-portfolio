@@ -1,7 +1,6 @@
 /* 
 TO DO:
 1. fix bugs
-    a. nav disappearing under work images
     b. check that reset.css is effective
 2. write desc
 3. add deployed link to readme
@@ -205,6 +204,7 @@ main p {
     width: 100%;
 
     background: transparent;
+    z-index: 100;
 }
 
 /* buttons */
