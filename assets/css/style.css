@@ -302,17 +302,18 @@ button:hover {
     justify-content: center;
 
     position: absolute;
-    bottom: 40px;
-    left: 0px;
+    bottom: 45px;
+    left: 15px;
 
     border: solid;
+    border-width: 1px;
     border-color: var(--lgray);
     padding: 5px;
 
     font-size: 25px;
-    font-weight: bold;
-    background-color: var(--lgray);
-    color: var(--dgray);
+
+    background-color: var(--dgray);
+    color: var(--lgray);
 }
 
 div span {
@@ -333,7 +334,7 @@ div span {
 
 .item1 img {
     /* image 1 */
-    width: 1370px;
+    width: 1385px;
     max-height: 450px;
 }
 
@@ -450,6 +451,11 @@ a:hover {
         /* sizes down the other portfolio images to fit into the column */
         width: 650px;
         height: 150px;
+    }
+
+    .itemstxt {
+        bottom: 20px;
+        left: 10px;
     }
 }
 
